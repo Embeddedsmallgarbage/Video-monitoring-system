@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.qss</file>
+        <file>images/folder.png</file>
+        <file>images/mp4.png</file>
+        <file>images/back.png</file>
+        <file>images/pause.png</file>
+        <file>images/playback.png</file>
+        <file>images/stop.png</file>
+        <file>images/refresh.png</file>
+    </qresource>
+</RCC>

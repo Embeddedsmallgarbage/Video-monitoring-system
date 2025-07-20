@@ -1,0 +1,234 @@
+/* 主窗口样式 */
+/* QMainWindow: Qt中主应用程序窗口的基类。 */
+QMainWindow {
+    background-color: white; /* 设置主窗口的背景颜色为白色。 */
+}
+
+/* 标题标签样式 */
+/* #title: 针对ID为"title"的QLabel控件的样式。通常用于显示应用程序的主标题。 */
+#title {
+    font-family: "Arial";    /* 设置字体为"Arial"。 */
+    font-size: 26pt;         /* 设置字体大小为26磅。 */
+    font-weight: bold;       /* 设置字体粗细为粗体。 */
+    text-align: center;      /* 设置文本水平居中对齐 (注意: 对于QLabel, qproperty-alignment 更常用)。 */
+}
+
+/* 日期时间标签样式 */
+/* #m_dateTimeLabel: 针对ID为"m_dateTimeLabel"的QLabel控件的样式。用于显示当前的日期和时间。 */
+#m_dateTimeLabel {
+    font-family: "Arial";    /* 设置字体为"Arial"。 */
+    font-size: 16pt;         /* 设置字体大小为16磅。 */
+    font-weight: bold;       /* 设置字体粗细为粗体。 */
+    text-align: center;      /* 设置文本水平居中对齐 (注意: 对于QLabel, qproperty-alignment 更常用)。 */
+}
+
+/* 历史记录标题样式 */
+/* #historyLabel: 针对ID为"historyLabel"的QLabel控件的样式。用于历史记录页面的标题。 */
+#historyLabel {
+    font-family: "Arial";    /* 设置字体为"Arial"。 */
+    font-size: 16pt;         /* 设置字体大小为16磅。 */
+    text-align: center;      /* 设置文本水平居中对齐 (注意: 对于QLabel, qproperty-alignment 更常用)。 */
+}
+
+/* 按钮通用样式 */
+/* QPushButton: 针对所有QPushButton控件的通用样式。 */
+QPushButton {
+    font-family: "Arial";    /* 设置字体为"Arial"。 */
+    font-size: 14pt;         /* 设置字体大小为14磅。 */
+}
+
+/* 主页按钮样式 */
+/* #m_monitorButton, #m_historyButton: 针对ID为"m_monitorButton"和"m_historyButton"的QPushButton控件的样式。 */
+/* 这些通常是主页面上导航到监控页面和历史记录页面的按钮。 */
+#m_monitorButton, #m_historyButton {
+    min-width: 200px;        /* 设置按钮的最小宽度为200像素。 */
+    min-height: 70px;        /* 设置按钮的最小高度为70像素。 */
+}
+
+/* 返回按钮样式 */
+/* #m_backButton1: 针对ID为"m_backButton1"的QPushButton控件的样式。通常是监控页面的返回按钮。 */
+#m_backButton1 {
+    min-height: 60px;        /* 设置按钮的最小高度为60像素。 */
+    max-width: 100px;        /* 设置按钮的最大宽度为100像素。 */
+}
+
+/* 历史页面按钮样式 */
+/* #m_backButton2, #m_refreshButton: 针对ID为"m_backButton2"和"m_refreshButton"的QPushButton控件的样式。 */
+/* 这些通常是历史记录页面上的返回按钮和刷新按钮。 */
+#m_backButton2, #m_refreshButton {
+    min-height: 70px;        /* 设置按钮的最小高度为70像素。 */
+    max-width: 150px;        /* 设置按钮的最大宽度为150像素。 */
+}
+
+/* 文件列表样式 */
+/* QListWidget: 针对所有QListWidget控件的通用样式。用于显示文件列表等。 */
+QListWidget {
+    font-family: "Arial";    /* 设置字体为"Arial"。 */
+    font-size: 14pt;         /* 设置字体大小为14磅。 */
+}
+
+/* QListWidget::item: 针对QListWidget中每一项的通用样式。 */
+QListWidget::item {
+    min-height: 40px;        /* 设置列表项的最小高度为40像素。 */
+}
+
+/* 历史页面文件列表项样式 */
+/* #m_fileListWidget QListWidget::item: 针对ID为"m_fileListWidget"的QListWidget中的列表项的特定样式。 */
+#m_fileListWidget QListWidget::item {
+    height: 50px;            /* 设置历史记录页面文件列表项的高度为50像素。 */
+}
+
+/* 视频页面文件列表项样式 */
+/* #m_videoListWidget QListWidget::item: 针对ID为"m_videoListWidget"的QListWidget中的列表项的特定样式。 */
+#m_videoListWidget QListWidget::item {
+    height: 30px;            /* 设置视频播放页面文件列表项的高度为30像素。 */
+}
+
+/* QListWidget::item:selected: 针对QListWidget中被选中项的样式。 */
+QListWidget::item:selected {
+    background-color: #D0E7FF; /* 设置选中项的背景颜色为淡蓝色 (#D0E7FF)。 */
+    border: 1px solid black;   /* 设置选中项的边框为1像素黑色实线。 */
+    color: black;              /* 设置选中项的文本颜色为黑色。 */
+}
+
+/* 图像标签样式 */
+/* #m_imageLabel: 针对ID为"m_imageLabel"的QLabel控件的样式。通常用于显示视频帧或图片。 */
+#m_imageLabel {
+    background-color: black;         /* 设置背景颜色为黑色。 */
+    qproperty-alignment: AlignCenter; /* 设置内容（图像）在标签内居中对齐。 */
+}
+
+/* 文件信息标签样式 */
+/* #m_fileInfoLabel: 针对ID为"m_fileInfoLabel"的QLabel控件的样式。用于显示文件的详细信息。 */
+#m_fileInfoLabel {
+    font-family: "Arial";             /* 设置字体为"Arial"。 */
+    font-size: 12pt;                  /* 设置字体大小为12磅。 */
+    qproperty-alignment: AlignLeft;   /* 设置内容左对齐。 */
+}
+
+/* #m_fileInfoLabel.centered: 针对同时具有ID "m_fileInfoLabel" 和类名 "centered" 的QLabel控件的样式。 */
+/* 用于当文件信息标签需要居中显示时的特定情况。 */
+#m_fileInfoLabel.centered {
+    qproperty-alignment: AlignCenter; /* 设置内容居中对齐。 */
+}
+
+/* 存储信息标签样式 */
+/* #m_storageInfoLabel: 针对ID为"m_storageInfoLabel"的QLabel控件的样式。用于显示存储设备（如TF卡）的信息。 */
+#m_storageInfoLabel {
+    font-family: "Arial";              /* 设置字体为"Arial"。 */
+    font-size: 16pt;                   /* 设置字体大小为16磅。 */
+    qproperty-alignment: AlignRight;   /* 设置内容右对齐。 */
+}
+
+/* 监控页面状态标签样式 */
+/* #m_recordStatusLabel: 针对ID为"m_recordStatusLabel"的QLabel控件的样式。用于显示录制状态。 */
+#m_recordStatusLabel {
+    color: white;                          /* 设置文本颜色为白色。 */
+    background-color: rgba(0, 0, 0, 128);  /* 设置背景颜色为半透明黑色 (alpha=128)。 */
+    padding: 5px;                          /* 设置内边距为5像素。 */
+}
+
+/* #m_recordStatusLabel.recording: 针对同时具有ID "m_recordStatusLabel" 和类名 "recording" 的QLabel控件的样式。 */
+/* 用于当正在录制时的特定状态显示。 */
+#m_recordStatusLabel.recording {
+    background-color: rgba(255, 0, 0, 128); /* 设置背景颜色为半透明红色 (alpha=128)，表示正在录制。 */
+}
+
+/* #m_recordTimeLabel: 针对ID为"m_recordTimeLabel"的QLabel控件的样式。用于显示录制时长。 */
+#m_recordTimeLabel {
+    color: white;                          /* 设置文本颜色为白色。 */
+    background-color: rgba(0, 0, 0, 128);  /* 设置背景颜色为半透明黑色。 */
+    padding: 5px;                          /* 设置内边距为5像素。 */
+}
+
+/* #m_fpsLabel: 针对ID为"m_fpsLabel"的QLabel控件的样式。用于显示实时帧率 (FPS)。 */
+#m_fpsLabel {
+    color: white;                          /* 设置文本颜色为白色。 */
+    background-color: rgba(0, 0, 0, 128);  /* 设置背景颜色为半透明黑色。 */
+    padding: 5px;                          /* 设置内边距为5像素。 */
+}
+
+/* 视频播放页面样式 */
+/* 视频控件样式 */
+/* #m_videoWidget: 针对ID为"m_videoWidget"的QVideoWidget控件的样式。用于显示播放的视频。 */
+#m_videoWidget {
+    background-color: black; /* 设置视频播放区域背景为黑色。 */
+    min-height: 400px;       /* 设置视频播放区域的最小高度为400像素。 */
+}
+
+/* 进度条样式 */
+/* #m_positionSlider: 针对ID为"m_positionSlider"的QSlider控件的样式。用于显示和控制视频播放进度。 */
+#m_positionSlider {
+    min-height: 30px;        /* 设置进度条的最小高度为30像素。 */
+}
+
+/* 时间标签样式 */
+/* #m_durationLabel: 针对ID为"m_durationLabel"的QLabel控件的样式。用于显示视频的当前播放时间和总时长。 */
+#m_durationLabel {
+    font-family: "Arial";             /* 设置字体为"Arial"。 */
+    font-size: 14pt;                  /* 设置字体大小为14磅。 */
+    min-height: 30px;                 /* 设置标签的最小高度为30像素。 */
+    qproperty-alignment: AlignCenter; /* 设置内容居中对齐。 */
+}
+
+/* 视频列表标题样式 */
+/* #listTitle: 针对ID为"listTitle"的QLabel控件的样式。通常是视频播放页面中同目录视频列表的标题。 */
+#listTitle {
+    qproperty-alignment: AlignCenter; /* 设置内容居中对齐。 */
+}
+
+/* 视频控制按钮样式 - 纯图标 */
+/* #m_playPauseButton, #m_stopButton, #m_backButton3: 针对ID为这些名称的QPushButton控件的样式。 */
+/* 这些按钮通常用于视频播放控制（播放/暂停、停止）和返回，设计为只显示图标。 */
+#m_playPauseButton, #m_stopButton, #m_backButton3 {
+    min-width: 40px;                 /* 设置按钮最小宽度为40像素。 */
+    min-height: 40px;                /* 设置按钮最小高度为40像素。 */
+    background-color: transparent;   /* 设置背景颜色为透明。 */
+    border: none;                    /* 移除边框。 */
+    padding: 5px;                    /* 设置内边距为5像素。 */
+    margin: 5px;                     /* 设置外边距为5像素。 */
+}
+
+/* 覆盖层样式 */
+/* #overlayWidget: 针对ID为"overlayWidget"的QWidget控件的样式。 */
+/* 通常用作一个透明的覆盖层，可以在视频上方显示其他控件（如返回按钮）。 */
+#overlayWidget {
+    background-color: transparent;   /* 设置背景颜色为透明。 */
+}
+
+/* 视频列表容器样式 */
+/* #m_videoListContainer: 针对ID为"m_videoListContainer"的QWidget控件的样式。 */
+/* 该容器用于容纳视频播放页面的同目录视频列表。 */
+#m_videoListContainer {
+    background-color: white;          /* 设置背景颜色为白色。 */
+    border-left: 1px solid #cccccc;   /* 设置左边框为1像素灰色实线 (#cccccc)。 */
+    width: 200px;                     /* 设置固定宽度为200像素。 */
+}
+
+/* 视频列表显示/隐藏按钮样式 */
+/* #m_toggleListButton: 针对ID为"m_toggleListButton"的QPushButton控件的样式。 */
+/* 用于控制视频列表的显示和隐藏。 */
+#m_toggleListButton {
+    font-family: "Arial";             /* 设置字体为"Arial"。 */
+    font-size: 12pt;                  /* 设置字体大小为12磅。 */
+    font-weight: bold;                /* 设置字体粗细为粗体。 */
+    background-color: #f0f0f0;        /* 设置背景颜色为浅灰色 (#f0f0f0)。 */
+    border: 1px solid #cccccc;        /* 设置边框为1像素灰色实线 (#cccccc)。 */
+    border-radius: 0;                 /* 移除边框圆角。 */
+    width: 20px;                      /* 设置固定宽度为20像素。 */
+    height: 80px;                     /* 设置固定高度为80像素。 */
+}
+
+/* 视频列表图标样式 */
+/* #m_videoListWidget: 针对ID为"m_videoListWidget"的QListWidget控件的特定样式。 */
+/* 用于调整视频列表中图标的大小。 */
+#m_videoListWidget {
+    icon-size: 150%;                 /* 设置图标大小为其原始大小的150%。 */
+}
+
+/* 覆盖层样式 - 补充 */
+/* #overlayWidget: 对ID为"overlayWidget"的QWidget控件样式的补充或特定设置。 */
+/* (此处与之前的 #overlayWidget 定义重复，通常QSS中后定义的会覆盖先定义的，或者合并属性) */
+#overlayWidget {
+    padding: 10px;                   /* 设置内边距为10像素。 */
+}
